@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+    color: hsl(30, 10%, 34%);
+    text-align: justify;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/static/Outfit-Regular.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background: hsl(30, 54%, 90%);
+}
+
+main {
+    box-sizing: border-box;
+    width: 46%;
+    margin: 4em auto 4em auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5em;
+    font-family: young-serif;
+    font-size: 16px;
+    margin: 7em auto 5em auto;
+    padding: 2.5em;
+    line-height: 1.6;
+}
+
+section {
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.7em;
+}
+
+.Preparation {
+    margin-top: 2em;
+    padding: 1.5em;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 0.5em;
+}
+
+.Preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+    
+h1 {
+    font-family: young-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: hsl(24, 5%, 18%);
+}
+
+h2 {
+    font-family: young-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    font-family: young-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: hsl(332, 51%, 32%);
+}
+
+ul, ol {
+    padding-left: 1em;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+li {
+    padding-left: 1em;
+}
+
+.simple-omelette-recipe {
+    margin-bottom: 0em;
+}
+
+.instructions {
+    padding-bottom: 1.8em;
+    border-top: 1px solid hsl(30, 54%, 90%);
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+
+.ingredients {
+    padding-bottom: 1.8em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 2.5em;
+}
+
+td {
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+    padding-left: 2em;
+}
+
+tr:last-child > td {
+    border-bottom: none;
+}
+
+.nutrition p {
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: white;
+    }
+    main {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    img {
+        border-radius: 0;
+    }
+    section {
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 767px) {
+    main {
+        width: 90%;
+        margin: 2em auto;
+        padding: 1.8em;
+    }
+}
